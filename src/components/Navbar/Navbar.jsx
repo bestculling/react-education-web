@@ -6,6 +6,7 @@ import MobileNavLinks from "./MobileNavLinks";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [active, setActive] = useState(null);
   return (
     <div className="fixed w-full top-0 left-0 z-20">
       <div>
@@ -30,7 +31,13 @@ const Navbar = () => {
           {toggle && (
             <div className="fixed h-full w-96 top-0 left-0 z-20 bg-Teal text-white flex flex-col justify-center items-center gap-8 py-8 shadow-lg">
               {navLinks.map((navLink) => {
-                return <MobileNavLinks key={navLink.id} {...navLink} setToggle={setToggle} />;
+                return (
+                  <MobileNavLinks
+                    key={navLink.id}
+                    {...navLink}
+                    setToggle={setToggle}
+                  />
+                );
               })}
               <HiX
                 className="absolute right-12 top-12 text-3xl cursor-pointer"
