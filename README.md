@@ -2,4 +2,6 @@
 
 ## Home page
 
-<img src="./src/assets/homepage.png" >
+<p align="center">
+  <img src="./src/assets/homepage.png" >
+</p>
