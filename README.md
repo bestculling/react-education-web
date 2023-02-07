@@ -1,1 +1,1 @@
-# Build a react responsive education website with tailwind css !🏎️
+# Build a react responsive education website with tailwind css ! 🏎️
